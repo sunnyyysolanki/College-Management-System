@@ -462,7 +462,7 @@ img {
                     rs = stmt.executeQuery(query);
                     if (rs.next()) {
         %>
-        <table border="0">
+        <table>
             <tr>
                 <td><img src="<%= rs.getString("link") %>" alt="img"></td>
                 <td>

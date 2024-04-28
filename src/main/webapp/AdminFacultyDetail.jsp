@@ -646,7 +646,7 @@ img {
 
                     if (rs.next()) {
         %>
-        <table border="0">
+        <table>
             <tr>
                 <td></td>
                 <td>
