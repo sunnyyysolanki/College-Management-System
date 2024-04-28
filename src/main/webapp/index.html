@@ -1,90 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Starting Page</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
-      <!--=============== REMIXICONS ===============-->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
-      
-      <!--=============== CSS ===============-->
-      <link rel="stylesheet" href="CSS/style.css">
-<style>
-    body {
-  /* font-family: Arial, sans-serif; */
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #f4f4f4;
-}
-
-.container {
-  display: flex;
-}
-
-.box {
-color:black;
-  width: 200px;
-  height: 100px;
-  margin: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.box:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-.box span {
-  font-size: 18px;
-}
-a{
-	cursor:pointer;
-	text-decoration:none;
-	color:black;
-}
-
-</style>
-</head>
-<body>
-
-    <!--==================== HEADER ====================-->
-    <header class="header" id="header">
-      <nav class="nav container">
-         <a href="#" class="nav__logo">Indus University</a>
-
-         <div class="nav__menu" id="nav-menu">
-            <ul class="nav__list">
-               <li class="nav__item">
-                  <span>Indus Institute of Technology And Engineering</span>
-               </li>
-            </ul>
-          </div>
-           
-      </nav>
-   </header>  
-
-<div class="container">
-  <div class="box" id="admin" onclick="document.location='AdminLogin.html'">
-    <span>Administrator</span>
-  </div>
-  <div class="box" id="faculty" onclick="document.location='FacultyLogin.html'">
-    <span>Faculty</span>
-  </div>
-  <div class="box" id="student" onclick="document.location='StudentLogin.html'">
-    <span>Student</span>
-  </div>
-  
-</div>
-
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Starting Page</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+		<!--=============== REMIXICONS ===============-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+		      
+		<!--=============== CSS ===============-->
+		<link rel="stylesheet" href="CSS/style.css">
+		<link rel="stylesheet" href="CSS/index.css">
+	</head>
+	<body>
+	
+	    <!--==================== HEADER ====================-->
+	    <header class="header" id="header">
+	      <nav class="nav container">
+	         <a href="#" class="nav__logo">Indus University</a>
+	
+	         <div class="nav__menu" id="nav-menu">
+	            <ul class="nav__list">
+	               <li class="nav__item">
+	                  <span>Indus Institute of Technology And Engineering</span>
+	               </li>
+	            </ul>
+	          </div>
+	          
+	      </nav>
+	   </header>  
+	
+	<div class="container">
+	  <div class="box" id="admin" onclick="document.location='AdminLogin.html'">
+	    <span>Administrator</span>
+	  </div>
+	  <div class="box" id="faculty" onclick="document.location='FacultyLogin.html'">
+	    <span>Faculty</span>
+	  </div>
+	  <div class="box" id="student" onclick="document.location='StudentLogin.html'">
+	    <span>Student</span>
+	  </div>
+	</div>
+	
+	</body>
 </html>

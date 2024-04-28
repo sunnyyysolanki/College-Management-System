@@ -12,111 +12,10 @@
      
     <!----===== Iconscout CSS ===== -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-
-   <title>Responsive Registration Form</title>
-   <style>
-    /* ===== Google Font Import - Poppins ===== */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-body{
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #f5f5f5; /* Change background color here */
-}
-.container{
-    position: relative;
-    max-width: 900px;
-    width: 100%;
-    border-radius: 6px;
-    padding: 30px;
-    margin: 0 15px;
-    background-color: #fff;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-}
-
-.container form{
-    position: relative;
-    margin-top: 16px;
-    /* min-height: 490px; */
-    background-color: #fff;
-    overflow: hidden;
-}
-
-
-.container form .title{
-    display: block;
-    margin-bottom: 8px;
-    font-size: 16px;
-    font-weight: 500;
-    margin: 6px 0;
-    color: #333;
-}
-.container form .fields{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-form .fields .input-field{
-    display: flex;
-    width: calc(100% / 3 - 15px);
-    flex-direction: column;
-    margin: 4px 0;
-}
-.input-field label{
-    font-size: 12px;
-    font-weight: 500;
-    color: #2e2e2e;
-}
-.input-field input, select{
-    outline: none;
-    font-size: 14px;
-    font-weight: 400;
-    color: #333;
-    border-radius: 5px;
-    border: 1px solid #aaa;
-    padding: 0 15px;
-    height: 42px;
-    margin: 8px 0;
-}
-.container form button{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 45px;
-    max-width: 200px;
-    width: 100%;
-    border: none;
-    outline: none;
-    color: #fff;
-    border-radius: 5px;
-    margin: 25px 0;
-    background-color: #4070f4;
-    transition: all 0.3s linear;
-    cursor: pointer;
-}
-
-form button:hover{
-    background-color: #265df2;
-}
-form button i
-{
-    margin: 0 6px;
-}
-
-
-   </style>
+	<link rel="stylesheet" href="CSS/Form.css">
+   <title>Enter Marks</title>
 </head>
 <body>
-
-
 <%
     // Obtain faculty ID and subject parameter
     String facultyID = FacultyNameUtility.getFacultyName();
@@ -140,8 +39,6 @@ form button i
         // Get subject names and codes based on faculty ID
         rs = stmt.executeQuery("SELECT subject_name, subject_id FROM asign_subject WHERE faculty_id = '" + facultyID + "'");
 %>
-
-
     <div class="container">
         <form action="FacultyEnterMarks" method="post">
             <div class="form ">
